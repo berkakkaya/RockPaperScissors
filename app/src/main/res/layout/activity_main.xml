@@ -11,42 +11,32 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aşağıdan seçiminizi yapın!"
+        android:text="Taş kağıt makas yapmak için aşağıdaki butona bas!"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
     <Button
-        android:id="@+id/buttonPaper"
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:onClick="paperPressed"
-        android:text="Kağıt"
+        android:onClick="pickChoicePressed"
+        android:text="Rastgele Seç"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <Button
-        android:id="@+id/buttonRock"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
-        android:onClick="rockPressed"
-        android:text="Taş"
-        app:layout_constraintEnd_toStartOf="@+id/buttonPaper"
-        app:layout_constraintTop_toTopOf="@+id/buttonPaper" />
-
-    <Button
-        android:id="@+id/buttonScissors"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:onClick="scissorsPressed"
-        android:text="Makas"
-        app:layout_constraintStart_toEndOf="@+id/buttonPaper"
-        app:layout_constraintTop_toTopOf="@+id/buttonPaper" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
